@@ -3,7 +3,7 @@ import numpy as np
 
 # === CONFIGURACIÓN ===
 ruta_stl = "foot.stl"  # Cambia esto por el nombre de tu archivo STL
-umbral_normal = 0.9          # Coseno del ángulo con el eje Z negativo
+umbral_normal = 0.7          # Coseno del ángulo con el eje Z negativo
 porcentaje_z = 15            # Parte inferior del modelo (en %)
 
 # === CARGAR MALLA ===
@@ -33,7 +33,7 @@ print(f"Caras en el {porcentaje_z}% inferior del modelo: {len(indices_por_z)}")
 # === COMBINAR AMBOS FILTROS ===
 indices_finales = np.intersect1d(indices_por_normal, indices_por_z)
 print(f"Caras que cumplen ambos criterios: {len(indices_finales)}")
- """
+"""
 
 indices_finales=indices_por_normal
 
