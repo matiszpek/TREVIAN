@@ -2,7 +2,7 @@ import trimesh
 import numpy as np
 
 # === CONFIGURACIÓN ===
-ruta_stl = "foot.stl"  # Cambia esto por el nombre de tu archivo STL
+ruta_stl = "pie_escaneado.stl"  # Cambia esto por el nombre de tu archivo STL
 umbral_normal = 0.7          # Coseno del ángulo con el eje Z negativo
 porcentaje_z = 15            # Parte inferior del modelo (en %)
 
